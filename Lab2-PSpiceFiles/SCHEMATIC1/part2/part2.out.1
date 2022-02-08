@@ -1,0 +1,66 @@
+
+**** 02/04/22 23:14:06 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-part2"  [ c:\cadence\ee100b winter 2022\lab2-PSpiceFiles\SCHEMATIC1\part2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "part2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "G:/My Drive/Winter 2022 Quarter/EE 100B/Labs/ee100_PSpiceLibs_CD4007/cd4007.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB2
+R_R1         N14619 N14581  15.4k  
+V_V1         N14581 0 5Vdc
+V_V2         N14627 0 5Vdc
+M_M2         N14627 N14619 0 0 nnMOS           
+M_M1         N14619 N14619 0 0 nnMOS           
+M_M3         N16275 N16345 0 0 nnMOS           
+M_M4         N16295 N16345 0 0 nnMOS           
+R_RL1         N16275 N16279  10k TC=0,0 
+R_RL2         N16295 N16291  10k TC=0,0 
+R_RP2         N16291 N16279  2k TC=0,0 
+V_VCM         N16345 GND 5Vdc
+V_V4         0 N16279 0Vdc
+R_RL4         N16978 N16938  10k TC=0,0 
+M_M6         N16978 N17042 N17074 0 nnMOS           
+R_RP3         N16938 N16902  1k TC=0,0 
+M_M5         N16974 N17022 N17074 0 nnMOS           
+V_VDD1         0 N16902 5Vdc
+V_VCM1         N17042 0 5Vdc
+R_RL3         N16974 N16902  10k TC=0,0 
+R_R2         N19733 N17425  15.4k  
+V_V6         N17425 0 5Vdc
+M_M7         N17074 N19733 0 0 nnMOS           
+M_M8         N19733 N19733 0 0 nnMOS           
+V_VCM2         N17022 0 5Vdc
+
+**** RESUMING part2.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N16345 is floating
+
+ERROR(ORPSIM-15142): Node GND is floating
+

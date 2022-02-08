@@ -1,0 +1,95 @@
+(ExpressProject "lab1"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\lab1.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\lab1-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lab1-pspicefiles\schematic1\part1.sim"
+        (DisplayName "SCHEMATIC1-part1")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\lab1-pspicefiles\schematic1\part2.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lab1-pspicefiles\schematic1\part2.sim"
+        (DisplayName "SCHEMATIC1-part2")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File
+         "G:\My Drive\Winter 2022 Quarter\EE 100B\Labs\ee100_PSpiceLibs_CD4007\cd4007.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "G:\My Drive\Winter 2022 Quarter\EE 100B\Labs\ee100_PSpiceLibs_CD4007\cd4007.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "acard")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 186"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1126 52 387")
+        (Scroll "0 20")
+        (Zoom "112")
+        (Occurrence "/"))
+      (Path "C:\CADENCE\EE100B WINTER 2022\LAB1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1152 78 413")
+        (Scroll "-28 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\CADENCE\EE100B WINTER 2022\LAB1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE2")))
+  (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (POT
+      (FullPartName "POT.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (r
+      (FullPartName "r.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG_P.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (cd4007_NMOS
+      (FullPartName "cd4007_NMOS.Normal")
+      (LibraryName
+         "G:\MY DRIVE\WINTER 2022 QUARTER\EE 100B\LABS\EE100_PSPICELIBS_CD4007\CD4007.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "G:\My Drive\Winter 2022 Quarter\EE 100B\Labs\ee100_PSpiceLibs_CD4007"))

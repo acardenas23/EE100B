@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-part6"  [ C:\Cadence\EE100B Winter 2022\lab2_part2-PSpiceFiles\SCHEMATIC1\part6.sim ] 
+
+** Creating circuit file "part6.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "G:/My Drive/Winter 2022 Quarter/EE 100B/Labs/ee100_PSpiceLibs_CD4007/cd4007.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

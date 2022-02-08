@@ -1,0 +1,45 @@
+
+**** 02/04/22 21:51:12 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-part1"  [ c:\cadence\ee100b winter 2022\lab2-PSpiceFiles\SCHEMATIC1\part1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "part1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "G:/My Drive/Winter 2022 Quarter/EE 100B/Labs/ee100_PSpiceLibs_CD4007/cd4007.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1u 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB2
+R_R1         N14619 N14581  10.4k  
+V_V1         N14581 0 5Vdc
+V_V2         N14627 0 5Vdc
+M_M2         N14627 N15180 0 0 nnMOS           
+M_M1         N14619 N15180 0 0 nnMOS           
+
+**** RESUMING part1.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N15180 is floating
+

@@ -1,0 +1,217 @@
+
+**** 02/05/22 18:10:16 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-part5"  [ c:\cadence\ee100b winter 2022\lab2-pspicefiles\schematic1\part5.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "part5.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "G:/My Drive/Winter 2022 Quarter/EE 100B/Labs/ee100_PSpiceLibs_CD4007/cd4007.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 80ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB2
+R_R1         N14619 N14581  15.4k  
+V_V1         N14581 0 5Vdc
+V_V2         N14627 0 5Vdc
+M_M2         N14627 N14619 0 0 nnMOS           
+M_M1         N14619 N14619 0 0 nnMOS           
+M_M3         N16275 N16364 0 0 nnMOS           
+M_M4         N16295 N16345 0 0 nnMOS           
+R_RL1         N16275 N16279  10k TC=0,0 
+R_RL2         N16295 N16291  10k TC=0,0 
+R_RP2         N16291 N16279  2k TC=0,0 
+V_VCM         N16345 0 5Vdc
+V_V4         0 N16279 5Vdc
+V_VCM3         N16364 0 5Vdc
+R_RL3         N21350 N21262  10k TC=0,0 
+M_M6         N21356 N21422 N21474 0 nnMOS           
+R_RP3         N21304 N21262  1k TC=0,0 
+M_M5         N21350 N21422 N21474 0 nnMOS           
+R_RL4         N21356 N21304  10k TC=0,0 
+V_VDD0         N22098 0 5Vdc
+M_M7         N22152 N22152 0 0 nnMOS           
+M_M8         N21474 N22152 0 0 nnMOS           
+R_R2         N22152 N22098  15.4k  
+V_VDD         N21262 0 5Vdc
+V_VCM1         N21422 0 5Vdc
+M_M9         N28801 N28877 N28915 0 nnMOS           
+V_VDD10         N28703 0 4Vdc
+M_M12         N28915 N29015 0 0 nnMOS           
+R_RL50         N28801 N35498  10k TC=0,0 
+M_M10         N28807 N28897 N28915 0 nnMOS           
+R_R30         N29015 N28953  15.4k  
+M_M11         N29015 N29015 0 0 nnMOS           
+V_VCM4         N29689 0 2.5Vdc
+R_RP4         N28751 N28703  1k TC=0,0 
+V_VDD1         N28953 0 4Vdc
+R_RL6         N28807 N28751  10k TC=0,0 
+V_V6         N28877 N28897  
++SIN 0 0.1 100 0 0 0
+R_R40         N28877 N29689  5k TC=0,0 
+R_R50         N28897 N29689  5k TC=0,0 
+R_R53         N32435 N32381  15.4k  
+R_R52         N32033 N31929  5k TC=0,0 
+R_RL51         N32263 N33519  10k TC=0,0 
+M_M15         N32435 N32435 0 0 nnMOS           
+R_RL52         N32273 N32213  10k TC=0,0 
+V_VDD12         N32381 0 5Vdc
+V_VDD11         N32133 0 5Vdc
+M_M13         N32263 N32029 N32373 0 nnMOS           
+M_M16         N32373 N32435 0 0 nnMOS           
+V_V7         N31929 N32974  
++SIN 0 100m 100 0 0 0
+R_R51         N32029 N31929  5k TC=0,0 
+R_RP5         N32213 N32133  1k TC=0,0 
+M_M14         N32273 N32033 N32373 0 nnMOS           
+V_VCM5         N32974 0 2.5Vdc
+R_RP7         N33519 N32133  1k TC=0,0 
+R_RP8         N35498 N28703  1k TC=0,0 
+
+**** RESUMING part5.cir ****
+.END
+
+**** 02/05/22 18:10:16 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-part5"  [ c:\cadence\ee100b winter 2022\lab2-pspicefiles\schematic1\part5.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               nnMOS           
+               NMOS            
+       LEVEL    2            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    1.1          
+          KP  600.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    5.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 02/05/22 18:10:16 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-part5"  [ c:\cadence\ee100b winter 2022\lab2-pspicefiles\schematic1\part5.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14581)    5.0000 (N14619)    1.9134 (N14627)    5.0000 (N16275)    -.1998     
+
+(N16279)   -5.0000 (N16291)   -4.1947 (N16295)    -.1683 (N16345)    5.0000     
+
+(N16364)    5.0000 (N21262)    5.0000 (N21304)    4.8991 (N21350)    3.9903     
+
+(N21356)    3.8902 (N21422)    5.0000 (N21474)    3.3208 (N22098)    5.0000     
+
+(N22152)    1.9134 (N28703)    4.0000 (N28751)    3.9285 (N28801)    3.2137     
+
+(N28807)    3.2137 (N28877)    2.5000 (N28897)    2.5000 (N28915)     .9147     
+
+(N28953)    4.0000 (N29015)    1.7887 (N29689)    2.5000 (N31929)    2.5000     
+
+(N32029)    2.5000 (N32033)    2.5000 (N32133)    5.0000 (N32213)    4.9003     
+
+(N32263)    3.9037 (N32273)    3.9037 (N32373)     .8281 (N32381)    5.0000     
+
+(N32435)    1.9134 (N32974)    2.5000 (N33519)    4.9003 (N35498)    3.9285 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.004E-04
+    V_V2        -2.036E-04
+    V_VCM        0.000E+00
+    V_V4        -8.827E-04
+    V_VCM3       0.000E+00
+    V_VDD0      -2.004E-04
+    V_VDD       -2.019E-04
+    V_VCM1       0.000E+00
+    V_VDD10     -1.430E-04
+    V_VCM4       0.000E+00
+    V_VDD1      -1.436E-04
+    V_V6         0.000E+00
+    V_VDD12     -2.004E-04
+    V_VDD11     -1.993E-04
+    V_V7         0.000E+00
+    V_VCM5       0.000E+00
+
+    TOTAL POWER DISSIPATION   1.16E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/05/22 18:10:16 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-part5"  [ c:\cadence\ee100b winter 2022\lab2-pspicefiles\schematic1\part5.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+
